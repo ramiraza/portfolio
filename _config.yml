@@ -1,0 +1,9 @@
+
+## global vars
+title: Portfolio Site
+
+## build settings
+sass:
+    style: compressed
+
+
