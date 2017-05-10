@@ -2,8 +2,12 @@
 ## global vars
 title: Portfolio Site
 
-## build settings
+## build settings specific to cloud 9 platform
+## terminal cmd: jerkyll serve -w
+baseurl: ''
 sass:
     style: compressed
 
-
+## conversion
+markdown: kramdown
+highlighter: rouge

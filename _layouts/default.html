@@ -2,12 +2,10 @@
 <html lang="en">
     {% include head.html %}
 <body>
-    {% include nav.html %}
-    
-    <div class="container-fluid">
-        {{ content }}
+    <div class="container">
+        <div class="main_container col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
+            {{ content }}
+        </div>
     </div>
-    
-    {% include scripts.js %}
 </body>
 </html>
