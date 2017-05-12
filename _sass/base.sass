@@ -1,24 +1,30 @@
 body
-  
-
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
 .main_container
   min-height: 100vh
   // max-width: 730px
-
-.navbar
-  border-radius: 0
-  background: #fff
-
 //base styling
-$opensans: 'Open Sans', sans-serif
+$opensans:'Open Sans', sans-serif
 
+pre
+  border: none
+  font-weight: 500
 h1, h2, h3
   font-family: $opensans
   margin: 0
   padding: 0
+  color: #2c3e50
 
 h2
   font-size: 1.5em
 p
   font-family: 'Roboto Slab', serif
   font-weight: 400
+  > a
+    color: #ee2b5b
+    text-decoration: none !important
+    cursor: pointer
+    transition: .5s ease-out
+    &:hover
+      color: gray
