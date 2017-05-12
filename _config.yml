@@ -7,6 +7,8 @@ kicker: Web Developer // Designer
 ## build settings specific to cloud 9 platform
 ## terminal cmd: jerkyll serve -w
 baseurl: ''
+port: 8080 ## c9 port
+host: 0.0.0.0 ## c9 host
 sass:
     style: compressed
 
