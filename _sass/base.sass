@@ -1,10 +1,18 @@
+// ******** base colors
+$bordergray:  #ecf0f1
+$cherryred:   #ee2b5b
+$heading:     #2c3e50
+$lightgray:   #efefef
+
 body
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
+  
 .main_container
   min-height: 100vh
-  // max-width: 730px
-//base styling
+  
+  
+//*********** base styling
 $opensans:'Open Sans', sans-serif
 
 pre
@@ -14,7 +22,7 @@ h1, h2, h3
   font-family: $opensans
   margin: 0
   padding: 0
-  color: #2c3e50
+  color: $heading
 
 h2
   font-size: 1.5em
@@ -22,7 +30,7 @@ p
   font-family: 'Roboto Slab', serif
   font-weight: 400
   > a
-    color: #ee2b5b
+    color: $cherryred
     text-decoration: none !important
     cursor: pointer
     transition: .5s ease-out
