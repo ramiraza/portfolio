@@ -8,8 +8,13 @@ body
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
   display: none
-  height: 90vh
 
+.border-bottom
+  border-bottom: 4px solid $bordergray
+  padding-bottom: 40px
+
+.main_container
+  min-height: 90vh
 
 //*********** base styling
 $opensans:'Open Sans', sans-serif
@@ -25,13 +30,13 @@ h1, h2, h3
 
 h2
   font-size: 1.5em
-p
+p, ul
   font-family: $roboto-slab
   font-weight: 400
-  > a
-    color: $cherryred
-    text-decoration: none !important
-    cursor: pointer
-    transition: .5s ease-out
-    &:hover
-      color: gray
+a
+  color: $cherryred
+  text-decoration: none !important
+  cursor: pointer
+  transition: .5s ease-out
+  &:hover
+    color: gray

@@ -7,9 +7,7 @@
   overflow: auto
 
 .header
-  border-bottom: 4px solid $bordergray
   margin: 120px 0 30px
-  padding-bottom: 40px
   .img_container
     text-align: center
     // margin-bottom: 15px
@@ -52,6 +50,7 @@
 .navbar-default
   border-radius: 0
   background: #fff
+  margin-bottom: 0
 
   .img_wrap
     height: 70px
@@ -88,41 +87,48 @@ a
 //**************************
 //***** About page *****
 //**************************
+.about-container
+  padding: 50px
 
 .hero_holder
   height: 300px
   overflow: hidden
-  background: lightgray
+  background: $lightgray
   border-radius: 5px
   img
     width: 100%
+    height: 100%
+    background: url('/assets/img/hero.jpg')
+    background-size: cover
+    
 .caption
   padding: 10px
   color: #7f8c8d
+  font-size: .75em
 
 .about
-  margin: 50px 0 0
-  font-size: 1.3em
-  line-height: 1.8em
+  font-size: 1.2em
+  line-height: 1.6em
   letter-spacing: .3px
-  padding-bottom: 30px
+  padding-top: 30px
   text-align: justify
-  border-bottom: 4px solid $bordergray
-  &::first-letter
-    font-weight: bolder
-    padding: 5px 12px
-    border-radius: 5px
-    font-size: 1.5em
-    background: black
-    color: #fff
-    margin-right: 5px
+  ul
+    padding-left: 0px
+    margin-top: 30px
+    font-size: 1em
+    li
+      font-size: .9em
+      margin-left: 20px
+      text-align: left
+      a
+        font-size: 1em
 
 //**************************
 //***** Skills Section  *****
 //**************************
 
 .skills
-  margin-bottom: 50px
+  margin: 30px 0
   h3
     margin-bottom: 20px
     font-size: 1.4em
@@ -131,8 +137,11 @@ a
 
   .skill
     height: 150px
-    background: lightgray
+    background: #ecf0f1
     border-radius: 4px
+    padding: 10px
+    svg
+      height: 40px
 
 
 //**************************
@@ -140,11 +149,10 @@ a
 //**************************
 
 .social
-  margin: 30px 0
+  padding: 20px 0
   div
     text-align: center
-    margin-top: 10px
-    padding: 5px
+    padding: 8px
   a
     color: $heading
     font-family: $roboto-slab
@@ -160,7 +168,10 @@ a
 footer
   background: $lightgray
   width: 100%
-  height: 150px
+  height: 10vh
+  display: block
+  position: relative
+  bottom: 0%
   text-align: center
   padding: 20px 0 30px
   .fa-heart
