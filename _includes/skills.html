@@ -1,20 +1,19 @@
 <section class="row skills">
+{% for skill in site.data.skills %}
   <div class="col-sm-6 col-md-4">
-    <div class="skill"></div>
+      <div class="skill">
+        {% if skill.label %}
+        <span class="label label-success">NEW</span>
+        {% endif %}
+        <img src="{{skill.svg}}" alt="">
+        <h3>{{skill.name}}</h3>
+        <p>{{skill.description}}</p>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{skill.level}};">
+            <span class="sr-only"></span>
+          </div>
+        </div>
+    </div>
   </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="skill"></div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="skill"></div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="skill"></div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="skill"></div>
-  </div>
-  <div class="col-sm-6 col-md-4">
-    <div class="skill"></div>
-  </div>
+{% endfor %}
 <section>
