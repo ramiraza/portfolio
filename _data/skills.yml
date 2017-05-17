@@ -1,4 +1,21 @@
+- name: Javascript
+  label: false
+  description: An object-oriented programming language
+  svg: /assets/devicons/js.svg
+  level: 80%
+  
+- name: Git
+  label: false
+  description: A version control system widely used with Github
+  svg: /assets/devicons/git.svg
+  level: 85%
 
+- name: Node
+  label: true
+  description: A Javascript runtime powered by Chrome V8 engine.
+  svg: /assets/devicons/node.svg
+  level: 30%
+  
 - name: Bootstrap
   label: false
   description: A popular HTML, CSS and JS framework
@@ -6,8 +23,8 @@
   level: 40%
 
 - name: Bower
-  label: false
-  description: a front-end package manager for web
+  label: true
+  description: A front-end package manager for web
   svg: /assets/devicons/bower.svg
   level: 70%
 
