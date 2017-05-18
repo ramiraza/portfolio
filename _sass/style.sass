@@ -26,6 +26,7 @@
 
 .kicker
   padding-left: 30px
+  
   h1
     font-weight: 300
     font-size: 4.5em
@@ -43,54 +44,7 @@
     letter-spacing: .5px
     margin-bottom: 20px
 
-//**************************
-//***** Navigation Bar *****
-//**************************
-.navbar-default
-  border-radius: 0
-  background: #fff
-  margin-bottom: 0
-  a
-    font-family: $opensans
-    font-weight: 600
-  .dropdown-menu
-    li
-      padding: 0
-      margin: 0
-  .img_wrap
-    height: 70px
-    width: 70px
-    margin: 10px 15px
-    float: left
-    img
-      height: 150%
-      width: 150%
-      margin-left: -10px
 
-.navbar-brand
-  h1
-    font-size: 1.2em
-    margin-top: 10px
-  h2
-    font-size: 0.675em
-
-
-.navbar-right
-  margin: 20px
-
-.navbar-toggle
-  margin-top: 28px
-
-.caret
-  margin-left: 8px
-// a
-//   font-weight: 500
-//   font-size: 1.1em
-
-.active > a
-  color: rgba(238,43,91,.8)!important
-  background: #fff !important
-  transition: .5s ease-in-out
 
 //**************************
 //***** About page *****
@@ -103,9 +57,9 @@
   overflow: hidden
   background: $lightgray
   border-radius: 5px
+  
   img
-    width: 100%
-    height: 100%
+    +size(100%)
     background: url('/assets/img/hero.jpg')
     background-size: cover
 
@@ -137,6 +91,7 @@
 
 .skills
   margin: 30px 0
+  
   div
     padding: 3px
 
@@ -144,18 +99,23 @@
     background: #ecf0f1
     border-radius: 4px
     padding: 15px
+    
     .label
       float: right
+    
     img
       height: 50px
+    
     h3
       font-size: 1em
       margin: 10px 0
       font-weight: 600
+    
     .progress
       padding: 0
       margin-bottom: 10px
       height: 5px
+      
 .skill-desc
   height: 50px
   font-size: .9em
