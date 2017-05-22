@@ -8,10 +8,8 @@ kicker: Web Developer // Designer
 ## terminal cmd: jerkyll serve -w
 baseurl: ''
 exclude: ['package.json', '.gitignore', 'node_modules', 'gulpfile.js']
-port: 8080 ## c9 port
-host: 0.0.0.0 ## c9 host
-profile: true
-incremental: true
+# port: 8080 ## c9 port
+# host: 0.0.0.0 ## c9 host
 sass:
     style: compressed
 
