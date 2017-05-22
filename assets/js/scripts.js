@@ -1,8 +1,15 @@
-// preloader script
-
-$(document).ready(() => {
-  $('body').fadeIn(1500).addClass('show')
-})
-
+// preloader script 
+/*global $*/
 var today = new Date();
-document.getElementById('currentYear').innerHTML = today.getFullYear()
+
+
+(function() {
+  $(document).ready(function() {
+    $('body').fadeIn(1500).addClass('show');
+    
+    $('#year').html(today.getFullYear());
+  });
+  
+})();
+
+console.log($('.navbar-default').height())
