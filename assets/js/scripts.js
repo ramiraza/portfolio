@@ -1,23 +1,29 @@
 // preloader script
 /*global $*/
-var today = new Date();
-
-
 (function() {
   $(document).ready(function() {
+    var today = new Date();
     $('body').fadeIn(1500).addClass('show');
     $('#year').html(today.getFullYear());
   });
 
   $(window).on('scroll', () => {
-    var $nav = $('.navbar2');
+    var $navScroll = $('.navbarScroll');
 
-    if($(window).scrollTop() > 250 ) {
-      $nav.fadeIn($(window).scrollTop() - 100)
+    if($(window).scrollTop() >= 250 ) {
+      $navScroll.fadeIn($(window).scrollTop() + 100)
+
     }
     else {
-      $nav.fadeOut($(window).scrollTop() - 100)
+      $navScroll.fadeOut($(window).scrollTop() - 150)
     }
+  })
+
+  var $label = $(".LabelName")
+  
+  $(".project").hover(function() {
+    $label.fadeIn(500);
+    $label.fadeOut(500);
   })
 
 })();

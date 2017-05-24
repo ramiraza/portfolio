@@ -16,3 +16,9 @@ sass:
 ## conversion
 markdown: kramdown
 highlighter: rouge
+
+
+collections:
+    portfolio:
+        output: true
+        permalink: /:collection/:name
