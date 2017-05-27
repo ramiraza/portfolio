@@ -19,11 +19,16 @@
     }
   })
 
-  var $label = $(".LabelName")
+  $('.carousel').slick({
+    infinite: true,
+    speed: 300,
+    arrows: false,
+    autoplay: true,
+    slidesToShow: 1,
+    centerMode: true,
+    variableWidth: true
+  });
+    
   
-  $(".project").hover(function() {
-    $label.fadeIn(500);
-    $label.fadeOut(500);
-  })
 
 })();

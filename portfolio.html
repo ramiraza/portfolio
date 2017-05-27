@@ -1,34 +1,17 @@
 ---
-layout: page
+layout: portfolio
 title: Portfolio
 permalink: /portfolio/
 nav_name: Portfolio
 navigation_weight: 4
 ---
 
-<div class="col-md-10 col-md-offset-1 portfolio_page">
-<!--    <div class="container portfolio_page">-->
-<!--    <div class="row">-->
-    <!--{% for project in site.portfolio %}-->
-    <!--<div class="col-md-4 col-sm-4 project">-->
-    <!--    <a href="{{project.url}}">-->
-    <!--        <img src="{{project.thumbnail}}">-->
-    <!--    </a>-->
-    <!--    <span class="label label-default">{{project.title}}</span>-->
-
-    <!--</div>-->
-    <!--{% endfor %}-->
-<!--</div>-->
-<!--</div>-->
-
-    <div class="row">
-        {% for item in site.portfolio %}
-            <div class="col-md-4 project">
-                <a href="{{item.url}}">
-                    <img src="{{item.thumbnail}}">
-                    <span class="label labelName label-default">{{item.title}}</span>
-                </a>
-            </div>
-        {% endfor %}
+<div class="carousel">
+  {% for project in site.portfolio %}
+    <div class="slide">
+      
     </div>
+  {% endfor %}
 </div>
+
+
