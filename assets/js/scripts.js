@@ -28,7 +28,5 @@
     centerMode: true,
     variableWidth: true
   });
-    
-  
 
 })();

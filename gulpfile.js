@@ -1,10 +1,11 @@
 // initiating requires
 var gulp        = require('gulp');
-var shell       = require('gulp-shell');
+var child       = require('child_process');
+var gutil       = require('gulp-util')
 var browserSync = require('browser-sync').create();
 
-// task for running jekyll shell commands
-gulp.task('build', shell.task(['jekyll serve -w']));
+
+// gulp.task('build', shell.task(['jekyll serve -w']));
 
 // task for auto refresh with browser-sync
 gulp.task('serve', () => {
@@ -12,10 +13,27 @@ gulp.task('serve', () => {
     server: {
       baseDir: '_site/'
     },
+    notify: false,
     reloadDebounce: 500
-  })
+  });
   gulp.watch('_site/**/*.*')
       .on('change', browserSync.reload)
 });
 
-gulp.task('default', ['build', 'serve']);
+// task for running jekyll shell commands
+
+gulp.task('build', ['serve'],() => {
+  const jekyll = child.spawn('jekyll', ['serve', '--watch']);
+
+  const jekyllLogger = (buffer) => {
+    buffer.toString()
+          .split(/\n/)
+          .forEach((message) => gutil.log('Jekyll: ' + message))
+  };
+  jekyll.stdout.on('data', jekyllLogger);
+  jekyll.stderr.on('data', jekyllLogger);
+});
+
+
+
+gulp.task('default', ['build']);

@@ -1,45 +1,43 @@
-//**************************
-//***** Navigation Bar *****
-//**************************
+// **************************
+// ***** Navigation Bar *****
+// **************************
+
+.navbar
+  margin-bottom: 0px
 
 .navbar-default
-  z-index: 9999
-  background: rgba(255,255,255,.95)
-  a
-    font-family: $opensans
-    font-weight: 600
-  .dropdown-menu
-    li
-      padding: 0
-      margin: 0
-  .img_wrap
-    +size(60px)
-    margin: 15px 15px
+  background: #fff
+  border-radius: 0px
+  border-top: none
+  border-right: none
+  border-left: none
+
+  .navbar-header, .navbar-nav
+    margin: 10px 0
+
+  .navbar-header .navbar-toggle
+    border: none
+    &:hover, &:focus
+      background: none
+    .icon-bar
+      background-color: #384E64
+
+  .navbar-header .img_wrap
+    +size(50px)
     float: left
-    img
-      height: 150%
-      width: 150%
-      margin-left: -10px
+    border: none
 
-.navbar-brand
-  h1
-    font-size: 1.2em
-    margin-top: 10px
-  h2
-    font-size: 0.675em
+  .navbar-brand
+    padding: 0
+    margin: 0
+    padding-left: 30px
+    h1
+      font-size: 1.2em
+      padding-top: 6px
+    h2
+      font-size: .675em
 
-
-.navbar-right
-  margin: 20px
-
-.navbar-toggle
-  margin-top: 28px
-
-.caret
-  margin-left: 8px
-
-
-.navbarScroll
-  display: none
-  border-radius: 0%
-  background: rgba(255,255,255,.8)
+  .navbar-nav
+    li.active > a
+      background: none
+      font-weight: bold

@@ -1,8 +1,8 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Jekyll and bootstrap driven portfolio website to display my projects and blog about my latest discoveries",
-  "main": "index.js",
+  "description": "",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,22 +10,15 @@
     "type": "git",
     "url": "git+https://github.com/unsyllable/portfolio.git"
   },
-  "keywords": [
-    "portfolio",
-    "jekyll"
-  ],
-  "author": "Ali Raza",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/unsyllable/portfolio/issues"
   },
   "homepage": "https://github.com/unsyllable/portfolio#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.11",
+    "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
-    "gulp-shell": "^0.6.3",
-    "bower": "^1.8.0",
-  },
-  "dependencies": {
+    "gulp-util": "^3.0.8"
   }
 }
