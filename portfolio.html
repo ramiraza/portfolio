@@ -23,13 +23,15 @@ navigation_weight: 4
 		</a>
 	</div>
 	{% endif %} {% endfor %}
+	<p>New items will be added soon</p>
 </div>
+
 
 <!-- including separate categories for group of items in portfolio -->
 
 <section class="container categories">
 	<h3>Branding Concepts</h3>
-	<p>Designed for small and medium sized business</p>
+	<p>Designed for small and medium sized businesses</p>
 	<div class="row">
 		{% for project in site.portfolio %}
 			{% if project.category == 'design' %}

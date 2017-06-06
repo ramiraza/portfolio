@@ -1,11 +1,11 @@
 <section class="row skills">
-  
+
   {% if page.title == 'About' %}
     {% for skill in site.data.skills limit:6 %}
       <div class="col-sm-6 col-md-4">
           <div class="skill">
             {% if skill.label %}
-            <span class="label label-success">NEW</span>
+            <span class="label label-success">New</span>
             {% endif %}
             <img src="{{skill.svg}}" alt="">
             <h3>{{skill.name}}</h3>
@@ -23,7 +23,7 @@
       <div class="col-sm-6 col-md-4">
           <div class="skill">
             {% if skill.label %}
-            <span class="label label-success">NEW</span>
+            <span class="label label-success">In Progress..</span>
             {% endif %}
             <img src="{{skill.svg}}" alt="">
             <h3>{{skill.name}}</h3>
@@ -36,6 +36,6 @@
         </div>
       </div>
     {% endfor %}
-      
+
   {% endif %}
 <section>
